@@ -13,17 +13,9 @@ console.log("Parola invertita:", parolaInvertita);
 
 // Funzione per invertire una parola
 function invertiParola(parola) {
-    return parola.split('').reverse().join('');
+    const parolaInvertita = parola.split('').reverse().join('');
+    console.log("Parola invertita nella funzione:", parolaInvertita);
+    return parolaInvertita;
+    
 
-    let risultato;
-    if (parolaInvertita === parolaUtente) {
-        risultato = "La parola è palindroma"
-        
-    } else {
-        risultato ="La parola non è palindroma"
-    }
-
-    // Restituisci il risultato
-    return { risultato };
-}
-
+}   
