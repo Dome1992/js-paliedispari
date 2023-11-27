@@ -21,3 +21,50 @@ function numComputer(min,max) {
     return randomNum;
     
 }
+
+// funzione per sommare il numero dell'utente e numero del computer
+const somma = newRandomComputer + numeroUtente;
+
+console.log("La somma è " + somma);
+
+
+
+// Funzione per determinare se un numero è pari o dispari
+function ParioDispari(somma) {
+    
+    let risultato;
+    // check se numero è pari o dispari
+    if (somma % 2 === 0) {
+        risultato = "pari";
+    
+    } else {
+        risultato = "dispari";
+    }
+
+    
+
+    let vincitore;
+    // check per risultato vincitore
+    if (risultato === sceltaUtente) {
+        vincitore = "Hai vinto";
+
+    } else {
+        vincitore ="Hai perso";
+
+    }
+
+    // Restituisci il risultato e il vincitore
+    return { risultato, vincitore };
+}
+
+/* Chiamata alla funzione e visualizzazione del risultato
+let risultatoParioDispari = ParioDispari(somma);
+console.log("La somma è " + risultatoParioDispari);*/
+
+// Visualizzazione del risultato
+let { risultato, vincitore } = ParioDispari(somma, sceltaUtente);
+alert("La somma è " + risultato + ". " + vincitore);
+console.log("La somma è " + risultato + ". " + vincitore);
+
+
+
